@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7f78ff" />
+      <stop offset="100%" stop-color="#6c63ff" />
+    </linearGradient>
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ecdc4" />
+      <stop offset="100%" stop-color="#45b7d1" />
+    </linearGradient>
+  </defs>
+  <!-- Main Rounded Background -->
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="#131324" stroke="url(#glow)" stroke-width="4"/>
+  
+  <!-- Minimalist Grid Dots (top bar) -->
+  <circle cx="36" cy="30" r="4" fill="#3a3b5c"/>
+  <circle cx="52" cy="30" r="4" fill="#3a3b5c"/>
+  <circle cx="68" cy="30" r="4" fill="#3a3b5c"/>
+  
+  <!-- Professional Checklist Checkmark Path -->
+  <path d="M40 68 L56 84 L88 48" fill="none" stroke="url(#checkGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

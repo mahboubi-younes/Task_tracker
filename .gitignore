@@ -1,0 +1,15 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments & Tools
+python38/
+python-3.8.10-embed-amd64.zip
+download_python38.py
+get-pip.py
+install_pip_and_deps.py
+
+# PyInstaller build files
+build/
+*.spec
