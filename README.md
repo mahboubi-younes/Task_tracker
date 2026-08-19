@@ -1,85 +1,44 @@
-# 🚀 Mon Assistant – Personal Desktop Task & Productivity Manager
+# 🚀 Mon Assistant – Gestionnaire de Tâches & Productivité Personnelle
 
-[![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.13-blue.svg)](https://www.python.org/)
-[![UI Framework](https://img.shields.io/badge/GUI-PyQt5%20%2F%20PySide6-green.svg)](https://www.qt.io/)
-[![Platform](https://img.shields.io/badge/platform-Windows%207%20%2F%2010%20%2F%2011-lightgrey.svg)](https://www.microsoft.com/windows)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Version](https://img.shields.io/badge/version-1.1-blue.svg)](https://mahboubi-younes.github.io/Mon_Assistant/)
+[![Plateforme](https://img.shields.io/badge/plateforme-Windows%207%20%7C%2010%20%7C%2011-lightgrey.svg)](https://www.microsoft.com/windows)
+[![Licence](https://img.shields.io/badge/licence-MIT-yellow.svg)](LICENSE)
 
-**Mon Assistant** is a modern, high-performance, offline-first personal task manager and productivity desktop application built with Python and Qt. It features an intelligent background notification engine, interactive calendar view, automated assistant insights, and a dynamic Qt compatibility layer allowing native execution on both legacy Windows 7 and modern Windows 10/11 systems.
+**Mon Assistant** est une application de bureau moderne, ultra-rapide et 100% hors-ligne développée avec Python et le framework Qt. Elle intègre un moteur de notification intelligent en arrière-plan, une vue calendrier interactive, un tableau de bord de statistiques et un système de compatibilité dynamique lui permettant d'être exécutée nativement sur les versions récentes de Windows (10/11) ainsi que sur Windows 7.
 
 ---
 
-## 🌐 Interactive Web Landing Page
+## 🌐 Page Web Officielle & Téléchargements
 
-Check out the official Web Landing Page for live preview and one-click downloads:  
+Accédez à la page web officielle pour découvrir l'application et la télécharger directement :  
 👉 **[https://mahboubi-younes.github.io/Mon_Assistant/](https://mahboubi-younes.github.io/Mon_Assistant/)**
 
 ---
 
-## 🌟 Key Features
+## 🌟 Fonctionnalités Principales
 
-- **📊 KPI Dashboard & Insights**: Live tracking of completed, overdue, in-progress, and upcoming tasks with automated advice cards.
-- **🔔 Background System Tray Engine**: Minimalist system tray integration with custom soundless/sound alerts before due dates.
-- **📅 Interactive Calendar View**: Month-grid calendar displaying tasks color-coded by importance and urgency level.
-- **🛡️ Universal Dual-Engine Compatibility**: Custom compatibility layer (`qt.py`) that dynamically switches between **PySide6 (Qt6)** on Windows 10/11 and **PyQt5 (Qt5)** on legacy Windows 7.
-- **🔒 100% Offline & Private**: All data is stored locally in an optimized SQLite database. No cloud dependence or tracking.
-- **🎨 Glassmorphic Dark UI**: Custom QSS theme, smooth visual feedback, keyboard shortcuts, and clean layout scaling.
+- **📊 Tableau de Bord KPI & Conseils** : Suivi en temps réel de vos tâches (terminées, en retard, en cours et à venir) avec des recommandations automatisées de productivité.
+- **🔔 Moteur d'Arrière-Plan (Systray)** : Intégration discrète dans la barre des tâches Windows avec alertes personnalisables avant l'échéance.
+- **📅 Vue Calendrier Interactive** : Calendrier mensuel réactif avec affichage par code couleur selon l'importance et l'urgence de vos priorités.
+- **🛡️ Double Moteur Qt Universel** : Couche de compatibilité dynamique basculant automatiquement entre **PySide6 (Qt6)** sur Windows 10/11 et **PyQt5 (Qt5)** sur Windows 7 pour éviter toute erreur de DLL.
+- **🔒 100% Hors-ligne & Confidentiel** : Vos données sont conservées localement dans une base SQLite optimisée. Aucune transmission de données dans le cloud.
+- **🎨 Design Sombre Glassmorphic** : Interface graphique soignée, typographie moderne et raccourcis clavier intuitifs.
 
 ---
 
-## 📥 Direct Downloads
+## 📥 Téléchargements Directs
 
-Download the standalone executable directly from the repository:
+Téléchargez l'application exécutable sans installation requise :
 
-| OS Version | Technology | Download Link |
+| Version Windows | Technologie | Lien de Téléchargement Direct |
 | :--- | :--- | :--- |
-| **Windows 10 / 11** | Python 3.13 + PySide6 (Qt6) | [Download Mon_Assistant.exe](dist/Mon_Assistant.exe) |
-| **Windows 7 (Legacy)** | Python 3.8 + PyQt5 (Qt5) | [Download Mon_Assistant_Win7.exe](dist/Mon_Assistant_Win7.exe) |
+| **Windows 10 / 11** | Python 3.13 + PySide6 (Qt6) | [Télécharger Mon_Assistant.exe](dist/Mon_Assistant.exe) |
+| **Windows 7 (Legacy)** | Python 3.8 + PyQt5 (Qt5) | [Télécharger Mon_Assistant_Win7.exe](dist/Mon_Assistant_Win7.exe) |
 
 ---
 
-## 💻 Technical Architecture
+## 📜 Licence
 
-```
-task_tracker/
-├── main.py              # Application entry point & High-DPI configuration
-├── main_window.py       # Main window layout, sidebar, system tray & reminder timer
-├── qt.py                # Dual-engine Qt compatibility wrapper (PySide6 / PyQt5)
-├── database.py          # SQLite persistence layer, schema & stats calculation
-├── styles.py            # Global QSS dark glassmorphism stylesheet & palette
-├── dialogs.py           # Task creation/editing & detailed modal dialogs
-├── pages/
-│   ├── dashboard.py     # KPI metrics & automated assistant advice
-│   ├── tasks.py         # Task management list with filter & search
-│   ├── calendar_view.py # Interactive month grid calendar
-│   ├── history.py       # Event log & completed task archive
-│   └── settings.py      # Preference configurations & database cleanup
-└── index.html           # Web Landing Page for GitHub Pages
-```
+Projet distribué sous la licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
----
-
-## 🛠️ Building from Source
-
-```bash
-# Clone repository
-git clone https://github.com/mahboubi-younes/Mon_Assistant.git
-cd Mon_Assistant
-
-# Install dependencies
-pip install PySide6
-
-# Run application
-python main.py
-
-# Build standalone executable (Windows 10/11)
-pyinstaller --onefile --noconsole --name "Mon_Assistant" main.py
-```
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-Developed by **Younes Mahboubi**
+Développé par **Younes Mahboubi**

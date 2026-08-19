@@ -1,7 +1,10 @@
 # Byte-compiled / optimized files
 __pycache__/
-*.py[cod]
-*$py.class
+*.pyc
+
+# Protect Python Source Code
+*.py
+pages/
 
 # Environments & Tools
 python38/
