@@ -9,7 +9,7 @@ L'application intègre une couche de compatibilité dynamique lui permettant d'e
 ### Page Web & Téléchargements
 
 La page web d'atterrissage est disponible à l'adresse suivante :
-https://mahboubi-younes.github.io/Mon_Assistant/
+https://mahboubi-younes.github.io/Task_tracker/
 
 ---
 
