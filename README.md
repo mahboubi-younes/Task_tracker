@@ -9,6 +9,13 @@
 
 ---
 
+## 🌐 Interactive Web Landing Page
+
+Check out the official Web Landing Page for live preview and one-click downloads:  
+👉 **[https://mahboubi-younes.github.io/Mon_Assistant/](https://mahboubi-younes.github.io/Mon_Assistant/)**
+
+---
+
 ## 🌟 Key Features
 
 - **📊 KPI Dashboard & Insights**: Live tracking of completed, overdue, in-progress, and upcoming tasks with automated advice cards.
@@ -20,9 +27,9 @@
 
 ---
 
-## 📥 Download & Installation
+## 📥 Direct Downloads
 
-Visit the live web page or download the standalone executable directly:
+Download the standalone executable directly from the repository:
 
 | OS Version | Technology | Download Link |
 | :--- | :--- | :--- |
@@ -47,7 +54,7 @@ task_tracker/
 │   ├── calendar_view.py # Interactive month grid calendar
 │   ├── history.py       # Event log & completed task archive
 │   └── settings.py      # Preference configurations & database cleanup
-└── index.html           # Landing page for GitHub Pages
+└── index.html           # Web Landing Page for GitHub Pages
 ```
 
 ---
@@ -56,7 +63,7 @@ task_tracker/
 
 ```bash
 # Clone repository
-git clone https://github.com/meh00-smkmk/Mon_Assistant.git
+git clone https://github.com/mahboubi-younes/Mon_Assistant.git
 cd Mon_Assistant
 
 # Install dependencies
@@ -75,4 +82,4 @@ pyinstaller --onefile --noconsole --name "Mon_Assistant" main.py
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-Developed by **Younes M.**
+Developed by **Younes Mahboubi**
